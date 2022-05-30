@@ -48,6 +48,6 @@ app.use(errorLogger); // подключаем логгер ошибок
 app.use(errors());
 app.use(InternalServerError);
 
-mongoose.connect('mongodb://localhost:27017/mestodb', { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost:27017/mestodb', {useNewUrlParser: true});
 
 app.listen(PORT);

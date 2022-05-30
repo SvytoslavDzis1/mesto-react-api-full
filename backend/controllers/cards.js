@@ -62,9 +62,9 @@ exports.likeCard = (req, res, next) => {
     .then((dataCard) => res.status(200).send(dataCard))
     .catch((err) => {
       if (err.name === 'CastError') {
-        next(new BadRequestError('Передан несуществующий _id карточки.'));
+        next(new CastError('Некорректный ID'));
       } else if (err.message === 'NotFound') {
-        next(new NotFoundError('Нет пользователя/карточки с переданным _id'));
+        next(new NotFoundError('Нет пользователя/карточки с переданным ID'));
       } else {
         next(err);
       }

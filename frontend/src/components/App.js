@@ -173,15 +173,7 @@ function App() {
         setEmail(data["email"]);
         history.push('/');
       })
-      .catch(() => {
-        if(401){
-          console.log("401 - пользователь с email не найден");
-        }else if(400){
-          console.log("400 - не передано одно из полей");
-        }
-        setMessage(false);
-        handleInfoTooltip();
-      });
+      .catch((err) => console.log(`${err}`)); 
   }
 
   function onLogout() {

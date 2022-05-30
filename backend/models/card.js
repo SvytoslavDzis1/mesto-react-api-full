@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const validator = require('validator');
 
 const cardSchema = new mongoose.Schema({
   // name — имя пользователя, строка от 2 до 30 символов, обязательное поле;
@@ -17,7 +16,6 @@ const cardSchema = new mongoose.Schema({
       validator(link) {
         return validator.isURL(link);
       },
-      message: 'Некорреткная ссылка',
     },
   },
   // owner — ссылка на модель автора карточки, тип ObjectId, обязательное поле;
