@@ -1,6 +1,5 @@
-# react-mesto-api-full
+# Mesto - 15 проектная работа Яндекс.Практимума
 Репозиторий для приложения проекта `Mesto`, включающий фронтенд и бэкенд части приложения со следующими возможностями: авторизации и регистрации пользователей, операции с карточками и пользователями. Бэкенд расположите в директории `backend/`, а фронтенд - в `frontend/`. 
   
-1. Ссылка на frontend проекта: https://svyatoslav.nomoredomains.work/
-2. Ссылка на backend https://api.svyatoslav.nomoredomains.xyz/
-3. Публичный IP-адрес сервера 62.84.123.43
+## Стек:
+* HTML, CSS, JavaScript, BEM (Nested), Flexbox, Grid Layout, node.js Figma
