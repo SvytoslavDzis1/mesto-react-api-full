@@ -1,5 +1,5 @@
 export const options = {
-  url: "https://api.svyatoslav.nomoredomains.xyz",
+  url: "http://localhost:3001",
   headers: {
     "Content-Type": "application/json",
   },
